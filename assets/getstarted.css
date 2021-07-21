@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    min-height: 20vh;
+    color: white;
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins';
+    z-index: 10;
+    margin-bottom: 5vh;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li a {
+    margin: .5rem 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav h1 {
+    color: white;
+}
+
+.nav .hamburger {
+    display: none;
+}
+
+.getstarted-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+    font-family: 'Poppins';
+}
+
+.main-win {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin: 0vh 0;
+    flex-direction: column;
+}
+
+.sub-win {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin: 0vh 0;
+    min-height: 100vh;
+    min-width: 70vw;
+}
+
+.text-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.text-part h1 {
+    color: royalblue;
+    padding: 5vh 5vw;
+    text-align: center;
+}
+
+.text-part p {
+    padding: 1vh 1vw;
+    text-align: center;
+}
+
+.text-part .nest-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+}
+
+.text-part .planning-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: royalblue;
+    padding: 1rem;
+}
+
+.window5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #000000af;
+    margin-top: 10vh;
+}
+
+.window5 .last-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+    margin-bottom: 5vh;
+}
+
+.window5 ul li {
+    display: inline-flex;
+    list-style: none;
+}
+
+.window5 a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    transition: 0.4s all ease;
+}
+
+.window5 .terms-conditions {
+    width: 70%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 780px) {
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .nav .hamburger {
+        display: block;
+    }
+
+    .nav .hamburger .bun {
+        width: 20px;
+        height: 2px;
+        margin: 5px;
+        background-color: white;
+    }
+
+    .nav h1 {
+        color: white;
+    }
+
+    .nav ul {
+        position: absolute;
+        top: 0;
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background-color: royalblue;
+        left: 100vw;
+        transition: all 1s ease;
+        z-index: 1;
+    }
+
+    .nav .cross {
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        position: absolute;
+        font-family: consolas;
+        top: 2vh;
+        left: 80vw;
+        transition: all 0.2s ease;
+    }
+
+    .nav ul li{
+        list-style: none;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+    .sub-win {
+        flex-direction: column;
+        order: 1;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    .text-part .nest-btn {
+        border-radius: 5px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .nav ul .others a {
+        border-bottom: 0.1px solid none;
+        letter-spacing: .5px;
+        transition: all 0.4s ease;
+    }
+    
+    .nav ul .others a:hover {
+        border-bottom: 2px solid white;
+        transition: all 0.4s ease;
+    }
+
+    .window5 a:hover {
+        background: lightgreen;
+        color: #000000af;
+        transition: 0.4s all ease;
+    }
+
+}
